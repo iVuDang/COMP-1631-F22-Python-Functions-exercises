@@ -1,12 +1,12 @@
 # COMP-1631-F22-Functions-exercises
 ## Purpose:
-* Create python functions to solve problems, involving use of input to take parameters from user, and main to call upon previous functions. 
+* I created python functions to process inputs into desired outputs, involving use of input() to take parameters from the user, and main() to call upon previous functions. 
 
 ## Citations
-* Problems provided by Comp 1631 F22, Prof. Patrick Perri, Mount Royal University. 
+* Problems provided by **Comp 1631 F22, Prof. Patrick Perri, Mount Royal University**. 
 
 ## Preview 
-<img src="https://github.com/iVuDang/COMP-1631-F22-Functions-exercises/blob/main/Comp1631_FunctionsExercises.png" width=75% height=75%>
+<img src="https://github.com/iVuDang/COMP-1631-F22-Functions-exercises/blob/main/Comp1631_FunctionsExercises.png" width=100% height=100%>
 
 
 ## Technologies 
@@ -16,15 +16,16 @@
 * Replit
 * Visual Studio Code
 
-- - - -
+
 ---
 
 
 ## What I learned 
 
-* Break problems into 
+* Break problems into small enough problems that the problems cannot be wrong when solving them. 
+
 ''' *Use thriple tickmarks to multi-line comment* '''
-# Use hashtag to make single line comments. Concise and adds value. 
+Use hashtag # to make single line comments. Concise and adds value. 
 To test and debug, behind each line of code or variable, use ; print(variableName)
 ** Indents matter ** 
 
