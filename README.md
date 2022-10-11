@@ -3,14 +3,14 @@
 * I created python functions to process inputs into desired outputs, involving use of input() to take parameters from the user, and main() to call upon previous functions. 
 
 ## Citations:
-* Problems provided by **Comp 1631 F22, Prof. Patrick Perri, Mount Royal University**. 
+* Problems provided by **Comp 1631 F22 - Prof. Patrick Perri** - Mount Royal University. 
 
 ## Preview:
 <img src="https://github.com/iVuDang/COMP-1631-F22-Functions-exercises/blob/main/Comp1631_FunctionsExercises.png" width=100% height=100%>
 
 
 ## Technologies: 
-* Python
+* Python 
 
 ## Tools:
 * Replit
