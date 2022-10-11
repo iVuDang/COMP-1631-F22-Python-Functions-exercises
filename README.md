@@ -28,6 +28,7 @@
 * Use hashtag # to make single line comments, that are concise and adds understanding for the reader. 
 * To test and debug, behind each line of code or variable, use ; print(variableName)
 * **Indents matter** 
+* Extensions in file names matter, javascript, python, html, css need to be saved: .js .py .html .css
 
 * Create **one function** for **one action**. 
 * Use verbs for for names of def functions, because functions DO something e.g. find, calc, sum, convert.
