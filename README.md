@@ -22,10 +22,10 @@
 
 ## What I learned: 
 
-* Break problems into **small enough problems** that the problems cannot be wrong when solving them. 
+* Break problems into **small enough problems** so that the problems cannot be wrong when solving them. 
 
 * ''' *Use thriple tickmarks to multi-line comment* '''
-* Use hashtag # to make single line comments. Concise and adds value. 
+* Use hashtag # to make single line comments, that are concise and adds understanding for the reader. 
 * To test and debug, behind each line of code or variable, use ; print(variableName)
 * **Indents matter** 
 
@@ -39,7 +39,7 @@ def sumArray(arr):
 
 * For variables, use camelCase.
 * Variable = equal sign means whatever on this side is assigned to the variable. Think of them as storage sites. 
-* Use explanatory variables - name the variable on what it does/what it is, so when you read it, you know exactly it’s purpose in the system.
+* Use explanatory variables - name the variable on what it does/what it is, so when you read it, you know exactly it’s purpose is in the algorithm. 
 
 ```python
 saleBonus:  
