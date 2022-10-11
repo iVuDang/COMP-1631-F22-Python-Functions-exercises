@@ -6,7 +6,7 @@
 * Problems provided by Comp 1631 F22, Prof. Patrick Perri, Mount Royal University. 
 
 ## Preview 
-<img src="" width=75% height=75%>
+<img src="https://github.com/iVuDang/COMP-1631-F22-Functions-exercises/blob/main/Comp1631_FunctionsExercises.png" width=75% height=75%>
 
 
 ## Technologies 
@@ -22,14 +22,49 @@
 
 ## What I learned 
 
+* Break problems into 
 ''' *Use thriple tickmarks to multi-line comment* '''
 # Use hashtag to make single line comments. Concise and adds value. 
-To test and debug, behind each line of code or variable, use ; print(variableName) 
+To test and debug, behind each line of code or variable, use ; print(variableName)
+** Indents matter ** 
 
-* Use explanatory variables - name the variable on what it does/what it is, so when you read it, you know exactly it’s purpose in the system.
-
-* Use verbs for for names of functions e.g. find, calc, sum
+* Create **one function** for **one action**. 
+* Use verbs for for names of functions e.g. find, calc, sum, convert.
 
 ```python
-def sumArray(arr):
+def sumArray(arr): 
+
 ```
+
+* For constants, use all uppercase CAPS.
+
+```python
+TAXRATE: 
+
+```
+
+
+* For variables, use camelCase.
+* Variable = equal sign means whatever on this side is assigned to the variable.
+* Use explanatory variables - name the variable on what it does/what it is, so when you read it, you know exactly it’s purpose in the system.
+
+```python
+saleBonus:  
+
+```
+
+
+* For final variables in main(), indicate them with 'the' in front.
+* For input, by default it is string, therefore, need to float() or int() in front to permit input type. 
+
+```python
+def main():
+
+    theDegree = float(input("Enter the number:"))
+
+    convertRadian(theDegree)
+
+main()
+
+```
+ 
