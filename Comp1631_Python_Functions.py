@@ -51,7 +51,161 @@ def main():
 main()
 
 
+
+'''
+3/8. Total Purchase
+A customer in a store is purchasing five items. Write a program that asks for the price of each item, 
+
+then displays the subtotal of the sale, 
+the amount of sales tax, 
+and the total. 
+
+Assume the sales tax is 5 percent.
+
+'''
+
+# PART A - function to perform desired output
+def totalPurchase(price1, price2, price3, price4, price5):
+  TAX = 0.05
+
+  subTotal = price1 + price2 + price3 + price4 + price5
+  salesTax = subTotal * TAX
+  totalWithTax = subTotal * (1 + TAX)
+
+  receiptStr = f' Subtotal: ${subTotal}\n Sales tax: ${salesTax}\n Total with taxes: ${totalWithTax}'
+
+  print(receiptStr)
+
+# PART B - main function to take input from user, and call prev function
+
+def main():
+  thePrice1 = float(input("Price of first item?:"))
+  thePrice2 = float(input("Price of second item?:"))
+  thePrice3 = float(input("Price of third item?:")) 
+  thePrice4 = float(input("Price of fourth item?:"))
+  thePrice5 = float(input("Price of fifth item?:"))
+
+  totalPurchase(thePrice1, thePrice2, thePrice3, thePrice4, thePrice5)             
+main()
+
+
+'''
+4/8 Distance Traveled
+
+Assuming there are no accidents or delays, the distance that a car travels down the highway can be calculated with the following formula:
+
+distance = speed x time 
+
+A car is traveling at 110 km per hour. 
+
+Write a program that prompts the user for the total trip time, then displays the distance travelled.
+'''
+
+
+# PART A
+
+def findDistance(minutes):
+  VELOCITY = 110 #km / hr
+
+  hours = minutes/60
+  distance = hours * VELOCITY
+
+  distanceStr = f'Distance traveled: {distance} km'
+
+  print(distanceStr)
+
+# PART B
+
+def main():
+
+  theTripTime = float(input("Enter trip time in minutes:"))
+  findDistance(theTripTime)
+
+
+main()
+
+
+
+'''
+5/8 Sales Tax
+
+Write a program that will ask the user to enter the amount of a purchase. The program should then compute the sales tax for a US state. 
+
+Assume the state sales tax is 5 percent and 
+the county sales tax is 2.5 percent. 
+
+The program should display the 
+
+amount of the purchase, 
+the state sales tax, 
+the county sales tax, 
+the total sales tax, and 
+the total of the sale (which is the sum of the amount of purchase plus the total sales tax).
+
+'''
+
+# PART 1
+def findSalesTaxes(amount):
+  STATERATE = 0.05
+  COUNTYRATE = 0.025
+
+  stateTax = STATERATE * amount
+  countyTax = COUNTYRATE  * amount
+  totalTax = stateTax + countyTax
+  totalSale = amount + totalTax
+
+  saleReceipt = f'Your receipt: \n State tax: {stateTax}\n County tax: {countyTax}\n Total taxes: {totalTax}\n Total sale: ${totalSale}'
+
+  print(saleReceipt)
+
+# PART 2
+def main():
+  
+  thePurchaseAmount = float(input("Enter the purchase amount:"))
+  findSalesTaxes(thePurchaseAmount)
+
+
+main()
+
+
+
+'''
+6/8 Celsius to Fahrenheit Temperature Converter
+
+Write a program that converts Celsius temperatures to Fahrenheit temperatures. The formula is as follows:
+ 
+Fahrenheit = (9/5)C + 32
+
+The program should ask the user to enter a temperature in Celsius, then display the temperature converted to Fahrenheit. 
+
+'''
+
+# PART A
+
+def findFH(celcius):
+  fraction = (9/5) * celcius 
+
+  temperatureFH = fraction + 32
+
+  temperatureStr = f'Temperature in Fahrenheit: {temperatureFH}'
+
+  print(temperatureStr)
+
+# PART B
+def main():
+
+  theCelcius = float(input("Enter temperature in Celcius:"))
+
+  findFH(theCelcius)
+
+main()
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------
 # Functions - 7 problems
+
+
 
 '''
 4/7. Total Purchase
@@ -88,7 +242,6 @@ def main():
 
   totalPurchase(thePrice1, thePrice2, thePrice3, thePrice4, thePrice5)             
 main()
-
 
 
 '''
