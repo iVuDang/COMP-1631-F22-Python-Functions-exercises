@@ -202,6 +202,96 @@ main()
 
 
 
+'''
+7/8 Ingredient  Adjuster
+
+A cookie recipe calls for the following ingredients:
+•  1.5 cups of sugar
+•  1 cup of butter
+•  2.75 cups of flour
+
+The recipe produces 48 cookies with this amount of the ingredients. 
+
+Write a program that asks the user how many cookies he or she wants to make, then displays the number of cups of each ingredient needed for the specified number of cookies.
+
+'''
+
+# PART 1
+def findIngredients(cookies):
+  SUGAR = 48/1.5 #cups
+  BUTTER = 48/1 #cups
+  FLOUR = 48/2.75 #cups
+
+  sugarNeeded = cookies/SUGAR
+  butterNeeded = cookies/BUTTER
+  flourNeeded = cookies/FLOUR
+
+  recipeStr = f'Sugar: {sugarNeeded:.2f} cups\nButter: {butterNeeded:.2f} cups\nFlour: {flourNeeded:.2f} cups'
+
+  print(recipeStr)
+
+  
+# PART 2 
+def main():
+  theCookies = int(input("Enter how many cookies:"))
+  findIngredients(theCookies)
+
+
+main()
+
+
+
+'''
+8/8  Stock Transaction Program
+
+Last month, Joe purchased some stock in Acme Software, Inc. Here are the details of the purchase:
+•  The number of shares that Joe purchased was 2,000.
+•  When Joe purchased the stock, he paid $40.00 per share.
+•  Joe paid his stockbroker a commission that amounted to 3 percent of the amount he paid for the stock.
+
+Two weeks later, Joe sold the stock. Here are the details of the sale:
+•  The number of shares that Joe sold was 2,000.
+•  He sold the stock for $42.75 per share.
+•  He paid his stockbroker another commission that amounted to 3 percent of the amount he received for the stock.
+
+Write a program that displays the following information:
+•  Joe's profit or loss
+•  The total amount of commission paid to the broker
+
+Extra challenge: Change your program so that it is re-usable and prompts the user for:
+•  Number of shares
+•  Initial stock price
+•  Stock sale price
+
+'''
+
+# PART 1
+def stockProfit(shares, buyPrice, salePrice):
+  COMM = 0.03
+
+  sharesBought = shares * buyPrice
+  sharesSold = shares * salePrice
+  commPaid = (COMM * sharesBought) + (COMM * sharesSold)
+  
+  net = sharesSold - (sharesBought + commPaid)
+
+  netStr = f'Profit/Loss: ${net}\nCommission paid: ${commPaid:.2f}'
+
+  print(netStr)
+
+
+# PART 2
+def main():
+  theShares = int(input("Shares bought and sold: "))
+  theBuyPrice = float(input("Share price when bought: "))
+  theSalePrice = float(input("Share price upon sale: "))
+
+  stockProfit(theShares, theBuyPrice, theSalePrice)
+
+main()
+
+
+
 #------------------------------------------------------------------------------------------------------------------------------------
 # Functions - 7 problems
 
