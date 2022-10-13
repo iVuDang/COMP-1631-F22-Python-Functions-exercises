@@ -295,6 +295,131 @@ main()
 #------------------------------------------------------------------------------------------------------------------------------------
 # Functions - 7 problems
 
+'''
+1/8 Property Tax
+
+A county collects property taxes on the assessment value of property, which is 60 percent of the property’s actual value. 
+
+For example, if an acre of land is valued at $10,000, its assess-ment value is $6,000. 
+
+The property tax is then 72¢ for each $100 of the assessment value. The tax for the acre assessed at $6,000 will be $43.20.
+
+Write a program that asks for 
+
+the actual value of a piece of property 
+and displays the assessment value 
+and property tax.
+
+'''
+
+# PART 1
+def findPropTax(propValue):
+  ASSRATE = 0.60
+
+  assValue = ASSRATE * propValue
+  taxPerValue = assValue // 100
+  propTax = taxPerValue * 0.72
+
+  valStr = f'Actual value: ${propValue:,.2f}\nAssessment value: ${assValue:,.2f}\nProperty tax: ${propTax:.2f}'
+
+  print(valStr)
+
+# PART 2
+def main():
+  thePropValue = float(input("Enter the property value:"))
+  findPropTax(thePropValue)
+
+main()
+
+
+
+'''
+2/8 Stadium Seating
+
+There are three seating categories at a stadium. 
+
+Class A seats cost $20, 
+Class B seats cost $15, and 
+Class C seats cost $10. 
+
+Write a program that asks how many tickets for each class of seats were sold, then displays the amount of income generated from ticket sales.
+'''
+
+# PART 1
+def findIncome(ticketsA, ticketsB, ticketsC):
+  CLASSA = 20
+  CLASSB = 15
+  CLASSC = 10
+
+  incomeA = ticketsA * CLASSA
+  incomeB = ticketsB * CLASSB
+  incomeC = ticketsC * CLASSC
+  incomeABC = incomeA + incomeB + incomeC
+  
+  incomeStr = f'Income from sales = {incomeABC}'
+
+  print(incomeStr)
+  
+# PART 2
+def main():
+  theTicketsA = int(input("Enter class A tickets: "))
+  theTicketsB = int(input("Enter class B tickets: "))
+  theTicketsC = int(input("Enter class C tickets: "))
+
+  findIncome(theTicketsA, theTicketsB, theTicketsC)
+
+main()
+
+
+
+''' 
+3/8 Paint Job Estimator
+
+A painting company has determined that 
+for every 112 square feet of wall space, 
+one gallon of paint and 
+eight hours of labor will be required. 
+The company charges $35.00 per hour for labor. 
+
+Write a program that asks the user to enter the square feet of wall space to be painted and 
+the price of the paint per gallon. 
+
+The program should display the following data:
+•  The number of gallons of paint required
+•  The hours of labor required
+•  The cost of the paint
+•  The labor charges
+•  The total cost of the paint job
+
+'''
+
+
+# PART 1
+def costJob(squareFeet, pricePaintPerGallon):
+  HOURRATE = 35 # $ per hour
+  PAINT = 1/112 # gallon per square feet 
+  LABOR = 8/112 # hours per square feet 
+
+  gallonsPaint = PAINT * squareFeet 
+  hoursLabor =  LABOR * squareFeet
+
+  paintCost = gallonsPaint * pricePaintPerGallon
+  laborCost = hoursLabor * HOURRATE
+  totalCost = laborCost + paintCost
+
+  totalCostStr = f'Number of gallons: {gallonsPaint}\nHours of labor: {hoursLabor}\nCost of paint: {paintCost}\nCost of labor: {laborCost}\nTotal cost: {totalCost}'
+    
+  print(totalCostStr)
+
+# PART 2
+def main():
+  theSquareFeet = float(input("Enter the square feet of wall space to be painted:"))
+  thePaintPrice = float(input("Enter the price of paint per gallon:"))
+
+  costJob(theSquareFeet, thePaintPrice)
+
+main()
+
 
 
 '''
