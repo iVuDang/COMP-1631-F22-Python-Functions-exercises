@@ -20,7 +20,8 @@
 ---
 ## Outcome:
 
-See attached "Comp1631_Python_Functions.py"
+* See attached "Comp1631_Python_Functions.py"
+
 ---
 
 ## What I learned: 
