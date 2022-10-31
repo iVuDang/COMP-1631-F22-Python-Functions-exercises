@@ -207,3 +207,41 @@ def main():
   check_free_delivery(the_amount)
 
 main()
+
+
+"""
+3.2 Now, BypassTheCleaning wants you to make sure that only users within 20 km get free delivery. 
+
+Modify the previous program to prompt the user for their delivery distance, then print messages according to the following table:
+
+Distance	                    Message
+distance <0	                  Invalid entry, distance must be positive
+0≤ distance <20	              Proceed to check amount
+20≤ distance	                Sorry, you are not eligible for free delivery
+
+"""
+
+def check_free_delivery(amount):
+  message = ""
+
+  if (amount < 0):
+    message = "Invalid entry, orders must be positive"
+  elif (amount >= 0 and amount < 20):
+    message = "Proceed to check amount"
+  elif (amount >= 20):
+    message = "Sorry, you are not eligible for free delivery"
+  else:
+    message = "Recheck inputs"
+
+  print(message)
+
+
+print(check_free_delivery(19))
+
+
+def main():
+  the_amount = float(input("Enter your order amount:"))
+  check_free_delivery(the_amount)
+
+
+main()
