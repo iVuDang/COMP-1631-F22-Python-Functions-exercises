@@ -35,7 +35,7 @@
 * Extensions in file names matter, javascript, python, html, css need to be saved: .js .py .html .css
 
 * Create **one function** for **one action**. 
-* Use verbs for for names of def functions, because functions DO something e.g. find, calc, sum, convert.
+* Use verbs and underscores for for names of def functions, because functions DO something e.g. calc_tax, sum_sales. 
 
 ```python
 def sumArray(arr): 
