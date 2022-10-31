@@ -162,3 +162,48 @@ def main():
   sales_tax(the_subtotal, the_province)
 
 main()
+
+
+"""
+3.	Design a program that prompts the user for the dollar amount of their current order, then prints out a message according to the following table:
+
+Amount	Message
+amount <0	          Invalid entry, orders must be positive
+0≤ amount <40	      Add $xx.xx to your order to get free delivery
+40 ≤ amount	        You get free delivery!
+"""
+
+
+def calc_remain(spend):
+  remain = 40 - spend
+  remain_str = f'Add ${remain:.2f} to your order to get free delivery'
+
+  print(remain_str)
+
+
+print(calc_remain(25.30))
+
+
+def check_free_delivery(amount):
+  message = ""
+
+  if (amount < 0):
+    message = "Invalid entry, orders must be positive"
+  elif (amount >= 0 and amount < 40):
+    message = calc_remain(amount)
+  elif (amount >= 40):
+    message = "You get free delivery"
+  else:
+    message = "Recheck inputs"
+
+  print(message)
+
+print(check_free_delivery(25.30))
+
+
+def main():
+  the_amount = float(input("Enter your order amount:"))
+
+  check_free_delivery(the_amount)
+
+main()
