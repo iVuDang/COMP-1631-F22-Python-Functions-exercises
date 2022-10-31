@@ -127,3 +127,38 @@ print(display_gpa_message(2.5))
 print(display_gpa_message(3.0))
     
 
+def sales_tax(subtotal: float, province: str) -> float:
+  '''Finds the sales tax based on province-
+    AB, and all of the territories= 0%, 
+    BC and MN= 7%, 
+    ON = 8%, 
+    SK = 6%, 
+    QC 9.975%, 
+    all other provinces = 10%'''
+
+  tax_calc = 0
+
+  if (province == "AB"):
+    tax_calc = 0 * subtotal
+  elif (province == ("BC" or "MN")):
+    tax_calc = 0.07 * subtotal
+  elif (province == "ON"):
+    tax_calc = 0.08 * subtotal
+  elif (province == "QC"):
+    tax_calc == 0.0975 * subtotal
+  else:
+    tax_calc = 0.1 * subtotal
+
+  tax_calc_str = f'The sales tax is ${tax_calc:.2f}'
+  print(tax_calc_str)
+
+print(sales_tax(100, "ON"))
+
+
+def main():
+  the_subtotal = float(input("Enter subtotal:"))
+  the_province = str(input("Enter province - AB, BC, MN, ON, SK, QC:"))
+
+  sales_tax(the_subtotal, the_province)
+
+main()
