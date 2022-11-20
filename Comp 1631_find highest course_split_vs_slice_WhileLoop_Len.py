@@ -54,3 +54,58 @@ def main() -> None:
 main()
 
 
+"""
+;print(number_portion)
+1501
+1505
+1401
+1103
+2150
+1502
+2511
+3210
+2170
+1101
+
+;print(just_names)
+;print(just_numbers)
+print(name_number_list)
+['COMP', '1501']
+['COMP']
+['1501']
+['Math', '1505']
+['COMP', 'Math']
+['1501', '1505']
+['GNED', '1401']
+['COMP', 'Math', 'GNED']
+['1501', '1505', '1401']
+['GNED', '1103']
+['COMP', 'Math', 'GNED', 'GNED']
+['1501', '1505', '1401', '1103']
+['MKTG', '2150']
+['COMP', 'Math', 'GNED', 'GNED', 'MKTG']
+['1501', '1505', '1401', '1103', '2150']
+['COMP', '1502']
+['COMP', 'Math', 'GNED', 'GNED', 'MKTG', 'COMP']
+['1501', '1505', '1401', '1103', '2150', '1502']
+['COMP', '2511']
+['COMP', 'Math', 'GNED', 'GNED', 'MKTG', 'COMP', 'COMP']
+['1501', '1505', '1401', '1103', '2150', '1502', '2511']
+['MGMT', '3210']
+['COMP', 'Math', 'GNED', 'GNED', 'MKTG', 'COMP', 'COMP', 'MGMT']
+['1501', '1505', '1401', '1103', '2150', '1502', '2511', '3210']
+['HRES', '2170']
+['COMP', 'Math', 'GNED', 'GNED', 'MKTG', 'COMP', 'COMP', 'MGMT', 'HRES']
+['1501', '1505', '1401', '1103', '2150', '1502', '2511', '3210', '2170']
+['GNED', '1101']
+['COMP', 'Math', 'GNED', 'GNED', 'MKTG', 'COMP', 'COMP', 'MGMT', 'HRES', 'GNED']
+['1501', '1505', '1401', '1103', '2150', '1502', '2511', '3210', '2170', '1101']
+[['COMP', '1501'], ['Math', '1505'], ['GNED', '1401'], ['GNED', '1103'], ['MKTG', '2150'], ['COMP', '1502'], ['COMP', '2511'], ['MGMT', '3210'], ['HRES', '2170'], ['GNED', '1101']]
+
+
+print("the biggest number is", courses[location_largest_one] )
+print("the biggest number is", courses[location_largert_two] )
+the biggest number is MGMT 3210
+the biggest number is MGMT 3210
+"""
+
