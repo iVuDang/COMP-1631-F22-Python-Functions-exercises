@@ -43,7 +43,7 @@ def sumArray(arr):
 
 ```
 
-* For variables, use camelCase.
+* For variables and functions in Python, use snake_case (JavaScript uses camelCase).
 * Variable = equal sign means whatever on this side is assigned to the variable. Think of them as storage sites. 
 * Use explanatory variables - name the variable on what it does/what it is, so when you read it, you know exactly it’s purpose is in the algorithm. 
 
