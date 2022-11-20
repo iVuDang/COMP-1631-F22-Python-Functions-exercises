@@ -70,4 +70,8 @@ def main():
 main()
 
 ```
+
+### Visual Studio Code - Keyboard Shortcuts
+* Ctrl Shift L: Replace all code that has the same text with newly typed or pasted value. 
+* Ctrl + K + C: to comment out all code
  
