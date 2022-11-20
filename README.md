@@ -6,7 +6,7 @@
 * Problems provided by **Comp 1631 F22 - Prof. Patrick Perri** - Mount Royal University. 
 
 ## Preview:
-<img src="https://github.com/iVuDang/COMP-1631-F22-Functions-exercises/blob/main/Comp1631_FunctionsExercises.png" width=100% height=100%>
+<img src="https://github.com/iVuDang/COMP-1631-F22-Functions-exercises/blob/main/Comp1631_Preview_Image.png" width=100% height=100%>
 
 
 ## Technologies: 
