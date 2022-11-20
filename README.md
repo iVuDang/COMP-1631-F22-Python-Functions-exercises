@@ -28,6 +28,7 @@
 
 * Break problems into **small enough problems** so that the problems cannot be wrong when solving them.
 * Return smaller expected values, rather than aggregated calcs. Use ;print(name of variable) beside each code line to check. 
+* Comment the result after the print with # 
 
 * ''' *Use thriple tickmarks to multi-line comment* '''
 * Use hashtag # to make single line comments, that are concise and adds understanding for the reader. 
@@ -72,6 +73,7 @@ main()
 ```
 
 ### Visual Studio Code - Keyboard Shortcuts
-* Ctrl Shift L: Replace all code that has the same text with newly typed or pasted value. 
-* Ctrl + K + C: to comment out all code
+* **Ctrl Shift L**: Replace all code that has the same text with newly typed or pasted value. 
+* **Ctrl + K + C**: to comment out all code.
+* **Ctrl + S**: to save regularly. 
  
