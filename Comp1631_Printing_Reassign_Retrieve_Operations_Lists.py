@@ -103,28 +103,35 @@ print ("--------------------")
 #-------------------------------------------------------------------------------
 
 
-#Concatenating Lists and Replicating lists
-aList = [1,2,3]
-bList = [4,5,6]
+#Lists - Concatenating, Replicating
+aList = [1, 2, 3]
+bList = [4, 5, 6]
 
 print(aList + bList)
-[1, 2, 3, 4, 5, 6]
-
 print(aList * 2)
-[1, 2, 3, 1, 2, 3]
 
+max_list = max(aList)
+print(max_list)
+#3
 
+min_list = min(aList)
+print(min_list)
+#1
 
-#-------------------------------------------------------------------------------
+sum_list = sum(aList)
+print(sum_list)
+#6
+
+extend_list = aList.extend(bList)
+print(extend_list)
 
 #Printing all items in a list at a time using while loop
-odd_nums = [1,3,5,7,9]
+odd_nums = [1, 3, 5, 7, 9]
 i = 0
 
 while i < len(odd_nums):
   print(odd_nums[i])
-  i += 1 
-
+  i += 1
 """
 1
 3
@@ -132,5 +139,6 @@ while i < len(odd_nums):
 7
 9
 """
+
 
 
