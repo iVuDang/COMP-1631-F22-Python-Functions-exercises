@@ -98,4 +98,39 @@ print (2 * odd_nums [2] + value_at_zero)
 # 65
 
 
+
 print ("--------------------")
+#-------------------------------------------------------------------------------
+
+
+#Concatenating Lists and Replicating lists
+aList = [1,2,3]
+bList = [4,5,6]
+
+print(aList + bList)
+[1, 2, 3, 4, 5, 6]
+
+print(aList * 2)
+[1, 2, 3, 1, 2, 3]
+
+
+
+#-------------------------------------------------------------------------------
+
+#Printing all items in a list at a time using while loop
+odd_nums = [1,3,5,7,9]
+i = 0
+
+while i < len(odd_nums):
+  print(odd_nums[i])
+  i += 1 
+
+"""
+1
+3
+5
+7
+9
+"""
+
+

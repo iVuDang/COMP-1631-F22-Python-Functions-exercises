@@ -66,3 +66,17 @@ print('-' *16)
 
 for task in to_do_list:
   print(task)
+
+
+#-------------------------------------------------------------------------------
+
+
+user_nums = []
+again = 'y'
+
+while (again == 'y'):
+  userNumber = float(input('Tell me a number: '))
+  user_nums.append(userNumber)
+  again = input("More numbers (y/n)? ")
+
+print(user_nums)
