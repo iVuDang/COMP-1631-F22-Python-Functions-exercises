@@ -98,7 +98,7 @@ Ershkigal
 ```
 
 * While loops with an empty accumulator variable are good for compiling/printing items in a horizontal row or list. 
-* A while loop nested within a while loop is a good way to iterate across a row and all columns, and repeat for next row. 
+* A while loop nested within a while loop is a good way to iterate across a row and all columns, and repeat for next row(s). 
 
 ```python
 gods_list = [['Odin', 'Kihci Manito', 'An'], ['Frigg', 'Grandmother Fox', 'Nammu'], ['Thor', ' Avas', 'Enki'], ['Tyr', 'Pithsiw', 'Ershkigal']]
@@ -129,7 +129,7 @@ while row < len(gods_list):            # while  0 < 4
 * Two ways to remove an unwanted separator at the end of a list, is to use 
     * pop() method removes the element at the specified position, default value is -1 
     * use an if statement isolating the last index position within the while loop
-    
+
 ```python
 
 numbers = [130, 343, 2, 29]
