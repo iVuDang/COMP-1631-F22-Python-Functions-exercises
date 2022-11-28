@@ -70,35 +70,43 @@ If we want a column, then return the value as each instance
 
 inFile = open('2rows.csv')
 
-raw_list= inFile.readlines()    # file.readlines() returns a list containing each line in the file as a list item. Stores the list in our created variable 'raw_list'
+print("2rows.csv - trace raw_list")
+raw_list= inFile.readlines() ; print(raw_list)    # file.readlines() returns a list containing each line in the file as a list item. Stores the list in our created variable 'raw_list'
+"""
+['1000,2200,0.1\n', 'kgs,lbs,tonnes\n']
+"""
 
 inFile.close()
 
-
-result=[]
 row=[]
+result=[]
 
 i = 0
 while i < len(raw_list):
     row = raw_list[i].split(",")
-    result.append(row)
+    result.append(row)  ; print(result)    # [['1000', '2200', '0.1\n']]
     i += 1
 
-i=0
+i = 0
 while i < len(result[0]):
     result[0][i] = float(result[0][i])
     i += 1
+
+print("2rows.csv - trace result")
 print(result)
+"""
+[[1000.0, 2200.0, 0.1], ['kgs', 'lbs', 'tonnes\n']]
+"""
 
 
 # Create a function for the two-column file, producing a three-row- two-column- list of lists.. 
 
 inFile= open('2columns.csv')
 
-raw_list = inFile.readlines()
+print("2columns.csv - trace raw_list") 
+raw_list = inFile.readlines() ; print(raw_list)      # ['1000,kgs\n', '2200,lbs\n', '0.1,tonnes\n']
 
 inFile.close()
-
 
 result=[]
 
@@ -108,5 +116,9 @@ while i < len (raw_list):
     row[0] = float(row[0])
     result.append(row)
     i += 1
-    
+
+print("2columns.csv - trace result")
 print(result)
+"""
+[[1000.0, 'kgs\n'], [2200.0, 'lbs\n'], [0.1, 'tonnes\n']]
+"""

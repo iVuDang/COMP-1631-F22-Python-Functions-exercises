@@ -43,17 +43,17 @@ Creates in .txt file
 def export_column(filename:str, data:list)-> None: # VOID function
     '''any list, exported as a column to local folder'''
 
-    filename += ".csv"                          # In a function, where it takes the name of the file as a paramter, we can crate a varaible to add an ".extension" to turn that parameter into a file
+    filename += ".csv"                          # In a function, where it takes the name of the file as a paramter, we can create a varaible to add an ".extension" to turn that parameter into a file
     outFile = open(filename, "w")               # outFile to open/create the file, in "w" mode. 
 
     i = 0
-    while i < len (data):                       # data refers to our second paramter, meant to be a list. 
+    while i < len (data):                       # data refers to our second parameter, meant to be a list. 
         outFile.write(str(data[i]) + "\n")      # write() method writes a specified text to the file, depending on file mode in our previous "open(file name.extension, "a" or "w"), 
         i += 1
 
     print("done...check for new file")          #unnecessary except for debugging
     
-    outFile.close()                             # Sequence always involve 3 phases, outFile.open(file name, "a or w mode"), .write( "variable" or direct code), and outFile.close()
+    outFile.close()                             # Sequence always involve 3 phases, open(file name, "a or w mode"), .write( "variable" or direct code), and outFile.close()
     
 export_column("ages_in_columns", ages)          # name of file, ages = [19, 18, 24, 54, 18, 21, 22, 23] 
 

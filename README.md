@@ -158,7 +158,7 @@ print("all done")
 """
 ```
 
-* Sequence of creating/exporting a file involves 3 phases: outFile.open(file name, "a or w mode"), .write( "variable" or direct code), and outFile.close()
+* Sequence of creating/exporting a file involves 3 phases: open(file name, "a or w mode"), .write( "variable" or direct code), and outFile.close()
 
 ```python
 def export_column(filename:str, data:list)-> None: # VOID function
@@ -174,7 +174,7 @@ def export_column(filename:str, data:list)-> None: # VOID function
 
     print("done...check for new file")          #unnecessary except for debugging
     
-    outFile.close()                             # Sequence always involve 3 phases, outFile.open(file name, "a or w mode"), .write( "variable" or direct code), and outFile.close()
+    outFile.close()                             # Sequence always involve 3 phases, open(file name, "a or w mode"), .write( "variable" or direct code), and outFile.close()
     
 export_column("ages_in_columns", ages)          # name of file, ages = [19, 18, 24, 54, 18, 21, 22, 23] 
 
