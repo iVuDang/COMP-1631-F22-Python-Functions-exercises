@@ -49,7 +49,7 @@ def sum_array(arr):
 * Use explanatory variables - name the variable on what it does/what it is, so when you read it, you know exactly it’s purpose is in the algorithm. 
 
 ```python
-saleBonus:  
+sale_bonus:  
 
 ```
 
@@ -61,6 +61,18 @@ TAXRATE:
 ```
 
 * For final variables in main(), indicate them with 'the' in front.
+* Use the main() function as the blueprint of all the other functions. One function performs one job. The main function will illustrate how each job achieves our purpose. 
+* f'strings'
+ ```python
+  # aligns right with 2 spaces. 
+ f'string text {variable:>2}' 
+
+ # aligns left with 2 spaces. 
+ f'string text {variable:<2}' 
+
+ # this aligns center, 2 spaces each side
+  f'string text {variable:^2}' 
+ ```
 * For input, by default it is in string, therefore, need to use float() or int() in front to permit input type. 
 
 ```python
